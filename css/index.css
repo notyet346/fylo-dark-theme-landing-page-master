@@ -19,11 +19,13 @@ font-family: 'Raleway', sans-serif; */
 
 h1, h2,
 nav a,
-button {
+button,
+input[type=submit] {
     font-family: 'Raleway', sans-serif;
 }
 
-p{
+p,
+.footer-nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,13 +53,7 @@ main{
 p{
     line-height: 1.5em;
 }
-/* .intro p,
-.features p,
-.how-it-works p,
-.sign-up p,
-footer p{
-    font-size: 1.2em;
-} */
+
 
 
 .intro ,
@@ -79,9 +75,13 @@ nav .nav-links {
     gap: 2rem;
 }
 
-
+.intro-bg {
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-size: cover;
+}
 .intro{
     padding-bottom: 3rem;
+
 }
 
 .intro-text{
@@ -169,14 +169,11 @@ h2 {
     width: 330px;
     background-color: var(--intro-email-bg);
     padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 hsl(0, 0%, 0%, .2);
+
 }
 
-
-
-
-footer {
-    background-color: var(--footer-bg);
-}
 form {
     flex-direction: column;
 }
@@ -186,3 +183,54 @@ input {
     border-radius: 25px;
     border: none;
 }
+
+input[type=text] {
+    padding-left: 2rem;
+    font-size: .675em;
+}
+input[type=submit] {
+    color: var(--neutral);
+    background: linear-gradient(to right,  var(--accent-gradient-1), var(--accent-gradient-2));
+    font-weight: bold;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--footer-bg);
+    padding: 5rem 2rem 0 2rem;
+}
+
+.address,
+.telephone,
+.email {
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.address img{
+    height: 25px;
+}
+
+.footer-nav {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 0;
+}
+.footer-nav li {
+    padding: .5rem 0;
+}
+.footer-nav a {
+    font-size: 1.1em;
+}
+
+.social-links {
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--accent-gradient-1); }

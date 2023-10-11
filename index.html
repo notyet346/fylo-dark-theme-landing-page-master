@@ -9,23 +9,21 @@
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
   <header>
-    <nav class="d-flex space-between">
+    <nav class="">
       <img  src="./images/logo.svg" alt="" class="logo">
-      <ul class="nav-links d-flex">
-        <li><a href="" class="nav-link">Features</a></li>
-        <li><a href="" class="nav-link">Team</a></li>
-        <li><a href="" class="nav-link">Sign In</a></li>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Features</a></li>
+        <li><a href="#" class="nav-link">Team</a></li>
+        <li><a href="#" class="nav-link">Sign In</a></li>
       </ul>
     </nav>
-    <div class="intro-bg">
-      <div class="intro text-center">
+      <div class="intro">
         <figure class="illustration">
-          <img class="img-responsive d-block" src="./images/illustration-intro.png" alt="">
+          <img class="" src="./images/illustration-intro.png" alt="">
         </figure>
         <article class="intro-text  ">
           <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -34,12 +32,11 @@
           <button>Get Started</button>
           </article>
       </div>
-    </div>
   </header>
   <main>
-    <section class="features d-flex">
+    <section class="features">
       
-      <article>
+      <article class="feature">
         <figure>
           <img src="./images/icon-access-anywhere.svg" alt="">
         </figure>
@@ -51,7 +48,7 @@
         files follow you everywhere.
         </p>
       </article>
-      <article>
+      <article class="feature">
         <figure>
           <img src="./images/icon-security.svg" alt="">
         </figure>
@@ -63,7 +60,7 @@
           features we allow to help secure your files.
         </p>
       </article>
-      <article>
+      <article class="feature">
         <figure>
           <img src="./images/icon-collaboration.svg" alt="">
         </figure>
@@ -73,7 +70,7 @@
           No email attachments required.
         </p>
       </article>
-      <article>
+      <article class="feature">
         <figure>
           <img src="./images/icon-any-file.svg" alt="">
         </figure>
@@ -84,10 +81,10 @@
         </p>
       </article>
     </section>
-    <section class="how-it-works text-left">
+    <section class="how-it-works">
       <article>
         <figure>
-          <img class="img-responsive illustration d-block" src="./images/illustration-stay-productive.png" alt="">
+          <img class="" src="./images/illustration-stay-productive.png" alt="">
         </figure>
         <h2>Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
@@ -99,15 +96,15 @@
         </div>
       </article>
     </section>
-    <section class="testimonials text-left">
+    <section class="testimonials ">
       <figure  class="quotes">
         <img src="./images/bg-quotes.png" alt="">
       </figure>
-      <div class="cards d-flex">
+      <div class="cards">
         <div class="card">
           <p class="text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.</p>
-          <div class="profile d-flex">
+          <div class="profile">
             <img src="./images/profile-1.jpg" alt="">
             <p><span class="name">Satish Patel</span><small class="occupation">Founder & CEO, Huddle</small></p>
           </div>
@@ -115,7 +112,7 @@
         <div class="card">
           <p class="text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.</p>
-          <div class="profile d-flex">
+          <div class="profile">
             <img src="./images/profile-2.jpg" alt="">
             <p><span class="name">Bruce McKenzie</span><small class="occupation">Founder & CEO, Huddle</small></p>
           </div>
@@ -124,7 +121,7 @@
           <p class="text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.
           </p>
-          <div class="profile d-flex 1">
+          <div class="profile ">
             <img src="./images/profile-3.jpg" alt="">
             <p><span class="name">Iva Boyd</span><small class="occupation">Founder & CEO, Huddle</small></p>
           </div>
@@ -132,11 +129,11 @@
       </div>
     </section>
     <section class="sign-up">
-      <article>
+      <div>
         <h2>Get early access today</h2>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.</p>
-      </article>
+        </div>
       <form class="d-flex">
         <input type="text" placeholder="email@example.com">
         <input type="submit" value="Get Started For Free">
@@ -146,21 +143,21 @@
   <footer>
     <img src="./images/logo.svg" alt="" class="footer-logo">
     <div class="contact-info">
-      <div class="address d-flex">
+      <div class="address">
         <img src="./images/icon-location.svg" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua</p>
       </div>
-      <div class="telephone d-flex">
+      <div class="telephone">
         <img src="./images/icon-phone.svg" alt="">
         <p>+1-543-123-4567</p>
       </div>
-      <div class="email d-flex">
+      <div class="email ">
         <img src="./images/icon-email.svg" alt="">
         <p>example@fylo.com</p>
       </div>
     </div>
-    <div class=" footer-nav d-flex">
+    <div class=" footer-nav">
       <ul>
         <li class="nav-link"><a href="#">About Us</a></li>
         <li class="nav-link"><a href="#">Jobs</a></li>

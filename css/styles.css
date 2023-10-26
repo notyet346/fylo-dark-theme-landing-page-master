@@ -161,15 +161,15 @@ header {
     background-position: bottom;
 }
 .intro {
-    padding: 3rem 0;
+    padding: 3rem 2rem;
 }
 .intro .illustration{
     padding: 2rem 0;
 }
 
 .intro-text p {
-    padding: 1.5rem 0;
-    font-size: clamp(1.2em, 1.3vw, 1.5em);
+    padding: 1.5rem 0 2rem 0;
+    font-size: clamp(1.125em, 1.3vw, 1.5em);
 }
 
 button {

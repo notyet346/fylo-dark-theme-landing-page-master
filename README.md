@@ -22,7 +22,11 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### 
+![Screen Shot 2023-10-26 at 12 38 47](https://github.com/notyet346/fylo-dark-theme-landing-page-master/assets/49989017/8289224f-5ac4-4d40-8f89-8190db549cde)
+
+![Screen Shot 2023-10-26 at 12 49 39](https://github.com/notyet346/fylo-dark-theme-landing-page-master/assets/49989017/cf4c8499-bdc5-49cf-9045-cff4526a4bfb)
+
 
 ### Links
 

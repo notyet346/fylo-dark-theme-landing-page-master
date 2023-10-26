@@ -127,15 +127,7 @@ footer {
 .sign-up {
     margin: 0 auto;
 }
-/* links */
-a {
-    cursor: pointer;
-}
 
-a:hover {
-    text-decoration: underline;
-    font-weight: 700;
-}
 /* header */
 header {
     padding-top: 2rem;
@@ -159,7 +151,15 @@ header {
     font-size: clamp(.8em ,1.3vw, 1.2em);
     font-weight: 400;
 }
+/* links */
+a {
+    cursor: pointer;
+}
 
+a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
 
 /* intro */
 .bg-img {

@@ -34,3 +34,16 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+
+### Useful resources
+
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+## Author
+
+- Frontend Mentor - [@notyet346](https://www.frontendmentor.io/profile/notyet346)

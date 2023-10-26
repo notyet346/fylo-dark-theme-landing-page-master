@@ -21,20 +21,41 @@
     --accent-gradient-2: hsl(198, 60%, 50%);
     --accent-error: hsl(0, 100%, 63%);
     --neutral: hsl(0, 0%, 100%);
-
-    font-size: 14px;
+    
+    
 }
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 /* font */
-
-img, svg{
+body {
+    text-align: center;
+    font-size: 14px;
+}
+img{
     display: block;
     max-width: 100%;
 }
+h1 {
+    font-size: clamp(1.675em, 2.7vw, 3em);
 
-input, button {
+    line-height: 1.5;
+}
+h2 {
+    /* font-size: 1.3em; */
+    /* font-size: 3em; */
+    font-size: clamp(1.3em, 2.7vw, 3em);
+    text-wrap: balance;
+    
+}
+h3 {
+    font-size: 1.4em;
+}
+button {
     font: inherit;
+}
+button, 
+a{
+    cursor: pointer;
 }
 button{
     outline-color: transparent;
@@ -46,6 +67,349 @@ li {
     list-style: none;
 }
 
+p {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+.nav-link,
+button,
+input[type=submit] {
+    font-family: 'Raleway', sans-serif; 
+}
+
+h1, 
+h2,
+h3,
+p, 
+a, 
+button {
+    color: var(--neutral);
+}
 header, .sign-up {
     background-color: var(--intro-email-bg);
+}
+main {
+    background-color: var(--main-bg);
+}
+footer{
+    background-color: var(--footer-bg);
+}
+h2,
+h3 {
+    padding: 1rem 0;
+}
+
+.intro, 
+.features, 
+.how-it-works, 
+footer {
+    padding: 0 2rem;
+}
+
+.features, 
+.how-it-works
+ {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.testimonials {
+    padding-top: 5rem;
+}
+
+/* center divs */
+.features img,
+.feature,
+.card,
+.intro img,
+.sign-up {
+    margin: 0 auto;
+}
+/* header */
+/* navbar */
+header {
+    padding-top: 2rem;
+}
+.logo {
+    height: 1.5rem;
+}
+.navbar, .nav-links {
+    display: flex;
+}
+.navbar { 
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+.nav-links {
+    gap: 2rem;
+}
+.nav-link {
+    font-size: clamp(.8em ,1.3vw, 1.2em);
+    font-weight: 400;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* intro */
+.bg-img {
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.intro {
+    padding: 3rem 0;
+}
+.intro .illustration{
+    padding: 2rem 0;
+}
+
+.intro-text p {
+    padding: 1.5rem 0;
+    font-size: clamp(1.2em, 1.3vw, 1.5em);
+}
+
+button {
+    background: linear-gradient(to right, var(--accent-gradient-1), var(--accent-gradient-2));
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.125em;
+}
+
+button:hover {
+    background: var(--accent-gradient-1);
+    opacity: .9;
+    font-weight: 700;
+}
+
+/* main */
+/* features */
+
+.feature {
+    padding-bottom: 5rem;
+    height: 300px;
+    width: 311px;
+}
+
+.feature img {
+    height: 3.3rem;
+    margin-bottom: 1.5rem;
+}
+/* how it works */
+.how-it-works {
+    text-align: left;
+    min-width: 300px;
+}
+.how-it-works p {
+    padding-bottom: 1rem;
+    font-size: 1.2em;
+}
+.how-it-works-link img{
+    display: inline;
+}
+.how-it-works-link {
+    display: flex;    
+}
+.how-it-works-link a{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: var(--accent-gradient-1);
+}
+
+
+/* testimonials */
+/* .quotes{
+    margin-left: 3.5rem;
+}
+.quotes img {
+    height: 20px;
+} */
+
+.cards {
+    display: grid;
+    gap: 2rem;
+}
+.card {
+    background: var(--testionials-bg);
+    width: 280px;
+    text-align: left;
+    padding: 1.5rem;
+}
+.card p {
+    font-size: .7em;
+}
+.profile {
+    display: flex;
+    margin-top: 1rem;
+}
+.profile img {
+    height: 25px;
+    border-radius: 20px;
+    margin-right: .5rem;
+}
+
+.profile-name {
+    font-weight: 700;
+}
+.profile-occupation {
+    font-size: .65em;
+    display: block;
+}
+
+/* sign-up */
+.sign-up {
+    padding: 2rem 1.5rem ;
+    position: relative;
+    top: 10rem;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.2);
+}
+.sign-up-form {
+    margin-top: 2rem;
+    
+}
+
+.sign-up-form input {
+    height: 3rem;
+    width: 100%;
+    border-radius: 30px;
+    border: transparent;
+}
+input[type=text] {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: .675em;
+    
+}
+input[type=submit] {
+    font-weight: 700;
+    color: var(--neutral);
+    background: linear-gradient(to right, var(--accent-gradient-1), var(--accent-gradient-2));
+}
+/* footer */
+footer {
+    padding-top: 15rem;
+}
+
+.contact-info {
+    padding: 2rem 0;
+    width: 311px;
+
+}
+.contact-info .info {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+.contact-info img {
+    display: inline;
+    height: 15px; 
+}
+.footer-nav-links{
+    text-align: left;
+    margin: 2rem 0;
+}
+.footer-nav-links {
+    margin-bottom: 2rem;
+}
+.footer-nav-links .nav-link {
+    font-size: 1.125em;
+    padding: .5rem 0;
+}
+
+/* social-links */
+.fa-brands {
+    font-size: 1.25em;
+    padding: 2rem .5rem;
+}
+
+.attribution { font-size: 11px;}
+.attribution a { color: var(--accent-gradient-1); }
+
+@media (min-width: 768px){
+    /* .bg-img {
+        background-image: url("../images/bg-curvy-desktop.svg");
+    } */
+    .intro{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .features, .how-it-works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .how-it-works {
+        gap: 2rem;
+    }
+ 
+    .cards {
+        display: flex;
+        max-width: fit-content;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .sign-up {
+        width: 50%;
+    }
+
+    .sign-up-form {
+        display: flex;
+        gap: 2rem;
+    }
+    .ft {
+        margin-bottom: 5rem;
+    }
+    .footer-logo {
+        margin-left: clamp(3rem, 6vw, 8rem);
+    }
+    
+    .ft, .footer-nav {
+        display: flex;        
+    }
+    .ft{
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .logo {
+        height: 3rem;
+    }
+    .navbar { 
+        padding: 2rem  4rem;
+    }
+    .intro-text p {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .features{
+        max-width: 900px;
+    }
+    .how-it-works{
+        max-width: 1240px;
+    }
+    .how-it-works,
+    .features{
+        
+        margin: 0 auto;
+        gap: 5rem;
+    }
+    input[type=text] {
+        width: 70%;
+    }
+    input[type=submit] {
+        width: 30%;
+    }
+    
+    
 }

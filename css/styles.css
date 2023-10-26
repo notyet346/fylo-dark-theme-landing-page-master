@@ -127,11 +127,21 @@ footer {
 .sign-up {
     margin: 0 auto;
 }
+/* links */
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
 /* header */
-/* navbar */
 header {
     padding-top: 2rem;
 }
+/* navbar */
+
 .logo {
     height: 1.5rem;
 }
@@ -149,10 +159,7 @@ header {
     font-size: clamp(.8em ,1.3vw, 1.2em);
     font-weight: 400;
 }
-.nav-link:hover {
-    text-decoration: underline;
-    font-weight: 700;
-}
+
 
 /* intro */
 .bg-img {
@@ -180,6 +187,7 @@ button {
     border-radius: 40px;
     font-weight: 700;
     font-size: 1.125em;
+    cursor: pointer;
 }
 
 button:hover {
@@ -221,7 +229,9 @@ button:hover {
     text-underline-offset: 10px;
     color: var(--accent-gradient-1);
 }
-
+.how-it-works-link a:hover{
+    color: var(--neutral);
+}
 
 /* testimonials */
 /* .quotes{
